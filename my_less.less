@@ -2,6 +2,8 @@
 @import "colors.less";
 @import "mixins.less";
 
+@main-font-size: 16px;
+
 
 html {
   font-family: 'Droid Sans', sans-serif;
@@ -74,6 +76,13 @@ footer {
     }
 }
 
+#contact-module {
+  .fonts() {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: @main-font-size;
+  }
+}
+
 /* Forms */
 #contact-form {
   background: #f8f8f8;
@@ -83,28 +92,24 @@ footer {
   border: @main-color 1px solid;
   .rounded-corners(10px);
   padding: 5px;
-}
+    input[type=textbox], textarea {
+      #contact-module > .fonts();
+      background: @contact-form-color;
+      width: 250px;
+      display: block;
+      border: 1px @main-color solid;
+      .rounded-corners(3px);
+      padding: 2px;
+        textarea {
+          height: 150px;
+          font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+            label {
+              width: 150px;
+                .validation {
+                display: none;
+              }
+            }
+        }
+    }
 
-#contact-form input[type=textbox], #contact-form textarea {
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 18px;
-  background: @contact-form-color;
-  width: 250px;
-  display: block;
-  border: 1px @main-color solid;
-  .rounded-corners(3px);
-  padding: 2px;
-}
-
-#contact-form textarea {
-  height: 150px;
-  font-family: "Open Sans", Verdana, Helvetica, sans-serif;
-}
-
-#contact-form label {
-  width: 150px;
-}
-
-#contact-form .validation {
-  display: none;
 }
