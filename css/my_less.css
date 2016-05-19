@@ -141,6 +141,7 @@ footer nav {
 }
 /* Forms */
 #contact-form {
+  background-image: url("sperine01.github.ioimages/background.jpg");
   background: #f8f8f8;
   width: 400px;
   margin-left: auto;

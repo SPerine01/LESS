@@ -76,7 +76,10 @@ footer {
     }
 }
 
+@root-of-app: "sperine01.github.io";
+
 #contact-module {
+@base-size: 26px;
   .fonts() {
     font-family: 'Droid Sans', sans-serif;
     font-size: @main-font-size;
@@ -85,6 +88,7 @@ footer {
 
 /* Forms */
 #contact-form {
+  background-image: url("@{root-of-app}images/background.jpg");
   background: #f8f8f8;
   width: 400px;
   margin-left: auto;
