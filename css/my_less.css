@@ -99,9 +99,9 @@ h3 {
   margin-right: auto;
   background: #fff;
   padding: 5px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   color: black;
 }
 /* Sections */
@@ -146,9 +146,9 @@ footer nav {
   margin-left: auto;
   margin-right: auto;
   border: black 1px solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   padding: 5px;
 }
 #contact-form input[type=textbox],
@@ -159,9 +159,9 @@ footer nav {
   width: 250px;
   display: block;
   border: 1px black solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   padding: 2px;
 }
 #contact-form textarea {

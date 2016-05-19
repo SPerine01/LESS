@@ -32,7 +32,7 @@ h3 {
   margin-right: auto;
   background: @container-color;
   padding: 5px;
-  .rounded-corners(10px);
+  .rounded-corners;
   color: @main-color;
 }
 
@@ -86,7 +86,7 @@ footer nav {
   margin-left: auto;
   margin-right: auto;
   border: @main-color 1px solid;
-  .rounded-corners(5px);
+  .rounded-corners(10px);
   padding: 5px;
 }
 
@@ -97,9 +97,7 @@ footer nav {
   width: 250px;
   display: block;
   border: 1px @main-color solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  .rounded-corners(2px);
   padding: 2px;
 }
 
