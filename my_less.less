@@ -1,5 +1,6 @@
 @import "init.less";
 @import "colors.less";
+@import "mixins.less";
 
 
 html {
@@ -30,10 +31,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   background: @container-color;
-  // padding: 5px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  padding: 5px;
+  .rounded-corners(10px);
   color: @main-color;
 }
 
@@ -87,9 +86,7 @@ footer nav {
   margin-left: auto;
   margin-right: auto;
   border: @main-color 1px solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  .rounded-corners(5px);
   padding: 5px;
 }
 
