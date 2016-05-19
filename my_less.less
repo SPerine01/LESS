@@ -1,3 +1,6 @@
+@import "init.less";
+@import "colors.less";
+
 
 html {
   font-family: 'Droid Sans', sans-serif;
@@ -5,7 +8,7 @@ html {
 }
 
 body {
-  background: ghostwhite;
+  background: @background-color;
 }
 
 h1 {
@@ -26,19 +29,19 @@ h3 {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  background: #FFF;
-  padding: 5px;
+  background: @container-color;
+  // padding: 5px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  color: #000;
+  color: @main-color;
 }
 
 /* Sections */
 header h1 {
   font-size: 24px;
   font-family: 'Lato', sans-serif;
-  color: steelblue;
+  color: @section-color;
 }
 
 nav {
@@ -67,7 +70,7 @@ nav ul li a:hover {
 footer {
   font-size: 9px;
   text-align: center;
-  color: blue;
+  color: @footer-color;
 }
 
 footer nav {
@@ -83,7 +86,7 @@ footer nav {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  border: black 1px solid;
+  border: @main-color 1px solid;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -93,10 +96,10 @@ footer nav {
 #contact-form input[type=textbox], #contact-form textarea {
   font-family: 'Droid Sans', sans-serif;
   font-size: 18px;
-  background: #ffffe0;
+  background: @contact-form-color;
   width: 250px;
   display: block;
-  border: 1px #000 solid;
+  border: 1px @main-color solid;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
